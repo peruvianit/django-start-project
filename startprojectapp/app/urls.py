@@ -6,7 +6,7 @@ app_name = "app"
 
 urlpatterns = [
     #: /app/
-    path('', views.index, name="home page"),
+    path('', views.index, name="index"),
     #ex: /app/1/
     path('<int:question_id>/', views.details, name="details"),
     #: /app/1/results/

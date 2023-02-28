@@ -1,13 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from django.utils import timezone
 
 from .models import Question, Choice
 # Create your views here.
 
 
 def index(request):
-    latest_question_list = Question.objects.all()
+    latest_question_list = Question.objects.filter(pub_date__lt=timezone.now()).order_by("pub_date")[:5]
     return render(request, "app/index.html", {
         "latest_question_list": latest_question_list
     })
