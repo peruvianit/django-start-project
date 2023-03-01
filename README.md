@@ -48,7 +48,7 @@ List of endpoint
  - [x] Manager Templates (Project and Application)
  - [ ] Version application
  - [x] Logging
- - [ ] file configuration application (properties)
+ - [x] file configuration application (properties)
  - [ ] Errors applications (404,500)
  - [ ] Paging and Sorting
  - [ ] User Validation, implement errors (401, 403)
