@@ -49,7 +49,7 @@ List of endpoint
  - [ ] Version application
  - [x] Logging
  - [x] file configuration application (properties)
- - [ ] Manager Error (404)
+ - [x] Manager Error (404)
  - [ ] Manager Error (504)
  - [ ] Paging and Sorting
  - [ ] User Validation, implement errors (401, 403)
