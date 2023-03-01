@@ -22,3 +22,4 @@ urlpatterns = [
 ]
 
 handler404 = "startprojectapp.views.page_not_found_view"
+handler500 = "startprojectapp.views.page_error_500_view"

@@ -6,7 +6,7 @@ from django.utils import timezone
 from .models import Question, Choice
 # Create your views here.
 
-import datetime
+
 import logging
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
