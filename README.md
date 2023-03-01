@@ -49,7 +49,8 @@ List of endpoint
  - [ ] Version application
  - [x] Logging
  - [x] file configuration application (properties)
- - [ ] Errors applications (404,500)
+ - [ ] Manager Error (404)
+ - [ ] Manager Error (504)
  - [ ] Paging and Sorting
  - [ ] User Validation, implement errors (401, 403)
 
