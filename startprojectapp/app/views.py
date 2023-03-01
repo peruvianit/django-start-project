@@ -1,3 +1,9 @@
+import datetime
+import logging
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
+
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
@@ -5,11 +11,6 @@ from django.utils import timezone
 
 from .models import Question, Choice
 # Create your views here.
-
-
-import logging
-# Get an instance of a logger
-logger = logging.getLogger(__name__)
 
 def index(request):
     logger.info('Index was accessed at ' + str(datetime.datetime.now()) + ' hours!')
@@ -47,3 +48,11 @@ def votes(request, question_id):
         select_choice.votes = select_choice.votes + 1
         select_choice.save()
         return HttpResponseRedirect(reverse("app:results", args=(question_id,)))
+
+def sample_error_500(request):
+    '''
+    Method for test the 500 Error
+    '''
+    ope = 100/0
+
+    return render(request, "app/index.html", {})

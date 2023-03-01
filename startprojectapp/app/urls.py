@@ -12,6 +12,7 @@ urlpatterns = [
     #: /app/1/results/
     path('<int:question_id>/results/', views.results, name="results"),
     #: /app/1/votes
-    path('<int:question_id>/votes/', views.votes, name="votes")
-
+    path('<int:question_id>/votes/', views.votes, name="votes"),
+    #: /app/sample_error_500
+    path('500', views.sample_error_500, name="500_error"),
 ]
