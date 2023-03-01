@@ -6,8 +6,13 @@ from django.utils import timezone
 from .models import Question, Choice
 # Create your views here.
 
+import datetime
+import logging
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
 
 def index(request):
+    logger.info('Index was accessed at ' + str(datetime.datetime.now()) + ' hours!')
     latest_question_list = Question.objects.filter(pub_date__lt=timezone.now()).order_by("pub_date")[:5]
     return render(request, "app/index.html", {
         "latest_question_list": latest_question_list
