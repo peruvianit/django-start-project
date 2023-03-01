@@ -47,7 +47,7 @@ List of endpoint
  - [x] MasterPage
  - [x] Manager Templates (Project and Application)
  - [ ] Version application
- - [ ] Logging
+ - [x] Logging
  - [ ] file configuration application (properties)
  - [ ] Errors applications (404,500)
  - [ ] Paging and Sorting
