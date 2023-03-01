@@ -45,7 +45,7 @@ List of endpoint
 ### Todos
  
  - [x] MasterPage
- - [ ] Manager Templates (Project and Application)
+ - [x] Manager Templates (Project and Application)
  - [ ] Version application
  - [ ] Logging
  - [ ] file configuration application (properties)
