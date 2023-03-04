@@ -1,14 +1,24 @@
 {% extends 'master/layout/layout.html' %}
 {% block contentarea %}
-    {% if latest_question_list %}
-        <center>
-            <ul>
-            {% for question in latest_question_list  %}
-                <li><a href="{% url 'app:details' question.id %}"> {{ question.question_text }}</a></li>
-            {% endfor %}
-            </ul>
-        </center>
-    {% else %}
-          <p>Non ci sono domande disponibili</p>
-    {% endif %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                {% if latest_question_list %}
+                    <center>
+                        <ul class="list-group">
+                        {% for question in latest_question_list  %}
+                            <a href="{% url 'app:details' question.id %}">
+                                <li class="list-group-item active" >
+                                    {{ question.question_text }}
+                                </li>
+                            </a>
+                        {% endfor %}
+                        </ul>
+                    </center>
+                {% else %}
+                      <p>Non ci sono domande disponibili</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
