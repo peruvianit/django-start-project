@@ -14,9 +14,9 @@
 
 ### Additional libraries
 
-| Library   | Version | Info                   |
-|-----------|---------|------------------------|
-| ---       | ---     | ---                    |
+| Modulo | Version | Info              |
+|-----|---------|-------------------|
+| django-bootstrap-v5    | 5.3.2   | frontend toolkit |
 
 ### Run 
 
